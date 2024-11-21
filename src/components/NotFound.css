@@ -1,0 +1,28 @@
+.error-section {
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+.error-page {
+    position: relative;
+}
+.error-page img {
+    padding: 40px 0;
+}
+.error-page h2 {
+    position: absolute;
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    right: 28%;
+    font-size: 80px;
+    top: 55%;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.error-page h4 {
+    font-weight: bold;
+}
+.error-page p {
+    width: 60%;
+    margin: auto;
+}
