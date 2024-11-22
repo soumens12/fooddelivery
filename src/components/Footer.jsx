@@ -58,9 +58,9 @@ function Footer() {
               <a href="callto:+14253261627"><i className="fa-solid fa-phone"></i>+1 425 326 16 27</a>
             </div>
             <ul className="social-media">
-                <li><Link to="https://www.facebook.com/"><i className="bx bxl-facebook"></i></Link></li>
-                <li><Link to="https://www.instagram.com/"><i className="bx bxl-instagram"></i></Link></li>
-                <li><Link to="https://x.com/"><i className="bx bxl-twitter"></i></Link></li>
+                <li><Link to="https://www.facebook.com/" target='_blank'><i className="bx bxl-facebook"></i></Link></li>
+                <li><Link to="https://www.instagram.com/" target='_blank'><i className="bx bxl-instagram"></i></Link></li>
+                <li><Link to="https://x.com/" target='_blank'><i className="bx bxl-twitter"></i></Link></li>
             </ul>
           </div>
         </div>

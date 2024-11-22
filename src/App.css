@@ -128,7 +128,7 @@ figure {
 }
 .button-2:hover {
   background-position: 100%;
-  background-color: transparent;
+  background-color: var(--color-white);
 }
 
 
