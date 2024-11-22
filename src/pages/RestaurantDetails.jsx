@@ -20,7 +20,7 @@ function RestaurantDetails() {
                         <div className="card w-100 rest-card">
                             <div className="card-body">
                                 <img src={data.image} alt={data.title} className="img-fluid mb-3 cafa-img" />
-                                <div className='cafa ms-4'>
+                                <div className='cafa ms-md-4'>
                                     <h4>{data.title}</h4>
                                     <div className='d-flex gap-3 cafa-button'>
                                         {data.buttons.map((btn, index) => (

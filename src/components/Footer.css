@@ -102,3 +102,10 @@ ul.social-media li a:hover i {
     font-size: 14px;
     padding-left: 20px;
 }
+
+@media only screen and (max-width: 991px){
+    .footer-description h2
+    {
+        width: 100%;
+    }
+}
