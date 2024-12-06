@@ -63,13 +63,12 @@ function Navbar() {
               </li>
             </ul>
             <div className=''>
-              
               <Link className="button button-2" to="/menu">Order Now</Link>
             </div>
           </div>
         </div>
       </nav>
-
+    
       {/* Mobile Sidebar */}
       <Sidebar
         isOpen={sidebarOpen}
