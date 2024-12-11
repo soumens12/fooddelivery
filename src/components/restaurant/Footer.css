@@ -83,3 +83,10 @@ ul.social-media li {
     font-size: 14px;
     padding-left: 20px;
 }
+
+@media only screen and (max-width:991px){
+    .footer-description
+    {
+        margin-bottom: 40px;
+    }
+}

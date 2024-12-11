@@ -41,7 +41,7 @@ function Navbar() {
                 type="button"
                 onClick={toggleSidebar}
               >
-                <span className="navbar-toggler-icon"></span>
+                {scrolled ? <span className="navbar-toggler-icon2"></span>:<span className="navbar-toggler-icon"></span>}
               </button>
           {/* Desktop Menu */}
           <div className="collapse navbar-collapse ps-5">
@@ -75,8 +75,9 @@ function Navbar() {
         toggleSidebar={toggleSidebar}
         menuItems={[
           { title: "Home", link: "/" }, 
+          { title: "About Us", link: "/about" }, 
           {
-            title: "Services",
+            title: "Restaurants",
             subItems: ["Restaurants", "Restaurant Card", "Marketing"],
           },
           { title: "Contact", link: "/contact" },

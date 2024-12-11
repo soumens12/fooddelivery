@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import logo from '../img/logo.svg';
 
 function Sidebar({isOpen, toggleSidebar, menuItems}) {
   return (
     <div className={`offcanvas offcanvas-start ${isOpen ? "show" : ""}`} style={{ visibility: isOpen ? "visible" : "hidden" }}>
       <div className="offcanvas-header">
-        <h5 className="offcanvas-title">Menu</h5>
+        <h5 className="offcanvas-title">
+          <img src={logo} alt="" />
+        </h5>
         <button type="button" className="btn-close" onClick={toggleSidebar}></button>
       </div>
       <div className="offcanvas-body">
@@ -12,7 +15,7 @@ function Sidebar({isOpen, toggleSidebar, menuItems}) {
           {menuItems.map((item, index) =>
             item.subItems ? (
               <li key={index}>
-                <strong>{item.title}</strong>
+                {item.title}
                 <ul className="ps-3">
                   {item.subItems.map((subItem, subIndex) => (
                     <li key={subIndex}>

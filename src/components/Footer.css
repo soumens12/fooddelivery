@@ -16,16 +16,20 @@
     font-size: 16px;
     width: 80%;
 }
+.menu
+{
+    margin: 20px 0;
+}
 .menu h4 {
     font-size: 24px;
     text-transform: uppercase;
     color: #787878;
     font-weight: bold;
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 ul.footer-menu li {
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 ul.footer-menu li a {
     font-size: 16px;
@@ -107,5 +111,9 @@ ul.social-media li a:hover i {
     .footer-description h2
     {
         width: 100%;
+    }
+    .footer-two
+    {
+        flex-direction: column;
     }
 }
