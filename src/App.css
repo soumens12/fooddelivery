@@ -328,14 +328,59 @@ hero section css
 }
 
 
-.offcanvas.show {
-    visibility: visible;
-    transform: translateX(0);
-  }
+
   
   .offcanvas {
-    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out !important;
     transform: translateX(-100%);
+  }
+  .offcanvas.show {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+
+  .sidebar
+  {
+    width: 95%;
+  }
+  .sidebar li:not(.submenu li){
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  .sidebar li:not(.submenu li) span{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: 8px;
+  }
+  .sidebar .submenu
+  {
+    transition: all 0.5s;
+  }
+
+  .sidebar .submenu li
+  {
+    padding: 4px 0;
+    padding-left: 15px;
+    display: flex;
+    position: relative;
+    
+  }
+  .sidebar .submenu li a{
+    color: #787878;
+  }
+  .sidebar .submenu li:before
+  {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    display: flex;
+    background-color: var(--color-theme);
+    left: 0;
+    top: 12px;
   }
 
   @media only screen and (max-width:991px){
